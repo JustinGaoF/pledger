@@ -1,0 +1,448 @@
+{
+  "contractName": "PriceOracle",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "isPriceOracle",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "contract CToken",
+          "name": "cToken",
+          "type": "address"
+        }
+      ],
+      "name": "getUnderlyingPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[{\"internalType\":\"contract CToken\",\"name\":\"cToken\",\"type\":\"address\"}],\"name\":\"getUnderlyingPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"isPriceOracle\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"getUnderlyingPrice(address)\":{\"params\":{\"cToken\":\"The cToken to get the underlying price of\"},\"return\":\"The underlying asset price mantissa (scaled by 1e18). Zero means the price is unavailable.\"}}},\"userdoc\":{\"methods\":{\"getUnderlyingPrice(address)\":{\"notice\":\"Get the underlying price of a cToken asset\"}}}},\"settings\":{\"compilationTarget\":{\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/PriceOracle.sol\":\"PriceOracle\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/BEP20Interface.sol\":{\"keccak256\":\"0x22f58fbc52cb49a9dca82d5c0392a4f8248b45e05e5f9cea953ffc7bc5acee19\",\"urls\":[\"bzz-raw://646df1865ff6537b82743a3d53984eebd85497741f929732230d62f6d90f455e\",\"dweb:/ipfs/QmPzbLSRTGDSHnbWXRmDQjyMvMAXD8RnxhrpHCDohLA12J\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/CToken.sol\":{\"keccak256\":\"0x873ac654c70e4646de61acf16de7504dba303c4a3c478517f68e56414d045701\",\"urls\":[\"bzz-raw://d37fbf905b160efa0abbff9044f3f8e37558d375899da88fc45e50d03f4ec155\",\"dweb:/ipfs/QmRCg6Yv5PgcRMuqZ3G4TKS3y2Mx8R6nvivQkNLpeHr5dN\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/CTokenInterfaces.sol\":{\"keccak256\":\"0x07afa89b3047e08d0b0743d228259f6d983b9fbba39e764cb665f57ad369a1d5\",\"urls\":[\"bzz-raw://2b9d61bc59803011ab142e0c0ace045c1c22e4428b3d69203b6fbf6e01692a53\",\"dweb:/ipfs/QmYs4iJQfaEnX92FMt7D111vTQLG9KbMJjy6Uf21YJCvRf\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/CarefulMath.sol\":{\"keccak256\":\"0x0647348f27e41d22555d99eebd217dee02a4d737df6accd7cce5347a7487c7de\",\"urls\":[\"bzz-raw://08882d26c11a6d240949a5afba79a74694a8b651093c05c5ae4cc359a0181c22\",\"dweb:/ipfs/QmVXb1tDswuhMRNuDLajzohdkvx2kBmqu1Rxn1BAKUfhkV\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/ComptrollerInterface.sol\":{\"keccak256\":\"0x8560ad750b8377e41882f7d2ff892a1e306c0d839f5334ef4bfc0bd2dd520119\",\"urls\":[\"bzz-raw://8f5a5c7d70c2f1a0c2a920df43db880ecca42580f5255c8aa6defd37ef6b1437\",\"dweb:/ipfs/QmPQCcQAyJa6G2bjMUn993d8sy7aSHZP4HQB21MoCvdHM9\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/EIP20NonStandardInterface.sol\":{\"keccak256\":\"0x5fe1d84d96032abd886a89919f14fbfb0a0e46ee68a364402e4fdfded9433097\",\"urls\":[\"bzz-raw://61a3b0ff8809f845545fa5f1e34f4d191ba96bf381d93df116bdef9dab4997f2\",\"dweb:/ipfs/QmTiiqC1B1RMELxZzpVeaZvcfNDmj3KoDE48thMHdxJMJx\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/ErrorReporter.sol\":{\"keccak256\":\"0x5f6c257325a81482695f98fc6299293c6da5dc1676a8793a7f39c5ee432e1773\",\"urls\":[\"bzz-raw://291d4cf273cdb3575e054816553176caa76939596a831775f2f7d2786931cb6d\",\"dweb:/ipfs/QmbbJh4zAUUefSfT2L6ydk5w2Q4vG6RkXPMNrEhdHg76CS\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/Exponential.sol\":{\"keccak256\":\"0xa1e5a936328d9e7f8d952f81355625f3371e0a11cfd2c1870f44be2981476105\",\"urls\":[\"bzz-raw://54e68e5303cf6141cab3364edcb26fb6649e0ba9cf23e5a162635c58687f6cc8\",\"dweb:/ipfs/QmXEwSpdPQmSHTfkY9TnqR8GJYWHV5U1sGHu1UW3icXR1M\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/InterestRateModel.sol\":{\"keccak256\":\"0x85222fb4bfd1bbf0b21654158952a0ef1e09c8681b0558f98e71a61b6c9af63a\",\"urls\":[\"bzz-raw://4a3a56ad73eeca9f2526e37f6c9bb6dc39a600e1531e7f392afe1a90d4e694c1\",\"dweb:/ipfs/QmUXkJgb6ZURAPtWtcZS2L7qUMwGsKTJoZjCzpizWUhzoK\"]},\"/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/PriceOracle.sol\":{\"keccak256\":\"0x893b2f6e4defc2c475b0de6d91cf2a979e79d27f5b27b9c1e37bc56900e048a0\",\"urls\":[\"bzz-raw://3599693eec5bafaad3f901bc8eba9da091826f933e822d93d4dd31cdcebd671f\",\"dweb:/ipfs/QmNyrYo9uuZc43U5cZ1du8BdL7oVr4zNPZ2pWzkZAtKnET\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: UNLICENSED\npragma solidity ^0.5.16;\n\nimport \"./CToken.sol\";\n\ncontract PriceOracle {\n    /// @notice Indicator that this is a PriceOracle contract (for inspection)\n    bool public constant isPriceOracle = true;\n\n    /**\n      * @notice Get the underlying price of a cToken asset\n      * @param cToken The cToken to get the underlying price of\n      * @return The underlying asset price mantissa (scaled by 1e18).\n      *  Zero means the price is unavailable.\n      */\n    function getUnderlyingPrice(CToken cToken) external view returns (uint);\n}\n",
+  "sourcePath": "/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/PriceOracle.sol",
+  "ast": {
+    "absolutePath": "/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/PriceOracle.sol",
+    "exportedSymbols": {
+      "PriceOracle": [
+        13113
+      ]
+    },
+    "id": 13114,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 13101,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".16"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "39:24:16"
+      },
+      {
+        "absolutePath": "/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/CToken.sol",
+        "file": "./CToken.sol",
+        "id": 13102,
+        "nodeType": "ImportDirective",
+        "scope": 13114,
+        "sourceUnit": 3214,
+        "src": "65:22:16",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": false,
+        "id": 13113,
+        "linearizedBaseContracts": [
+          13113
+        ],
+        "name": "PriceOracle",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": true,
+            "id": 13105,
+            "name": "isPriceOracle",
+            "nodeType": "VariableDeclaration",
+            "scope": 13113,
+            "src": "195:41:16",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 13103,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "195:4:16",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "argumentTypes": null,
+              "hexValue": "74727565",
+              "id": 13104,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "232:4:16",
+              "subdenomination": null,
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": null,
+            "documentation": "@notice Get the underlying price of a cToken asset\n@param cToken The cToken to get the underlying price of\n@return The underlying asset price mantissa (scaled by 1e18).\n Zero means the price is unavailable.",
+            "id": 13112,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getUnderlyingPrice",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 13108,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13107,
+                  "name": "cToken",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13112,
+                  "src": "527:13:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_CToken_$3213",
+                    "typeString": "contract CToken"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 13106,
+                    "name": "CToken",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 3213,
+                    "src": "527:6:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_CToken_$3213",
+                      "typeString": "contract CToken"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "526:15:16"
+            },
+            "returnParameters": {
+              "id": 13111,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 13110,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 13112,
+                  "src": "565:4:16",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 13109,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "565:4:16",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "564:6:16"
+            },
+            "scope": 13113,
+            "src": "499:72:16",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "external"
+          }
+        ],
+        "scope": 13114,
+        "src": "89:484:16"
+      }
+    ],
+    "src": "39:535:16"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/PriceOracle.sol",
+      "exportedSymbols": {
+        "PriceOracle": [
+          13113
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".16"
+          ]
+        },
+        "id": 13101,
+        "name": "PragmaDirective",
+        "src": "39:24:16"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3214,
+          "absolutePath": "/Users/junlin.gao/go/src/github.com/notion/pledge-protocol/contracts/CToken.sol",
+          "file": "./CToken.sol",
+          "scope": 13114,
+          "symbolAliases": [
+            null
+          ],
+          "unitAlias": ""
+        },
+        "id": 13102,
+        "name": "ImportDirective",
+        "src": "65:22:16"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": false,
+          "linearizedBaseContracts": [
+            13113
+          ],
+          "name": "PriceOracle",
+          "scope": 13114
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": true,
+              "name": "isPriceOracle",
+              "scope": 13113,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "bool",
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "bool",
+                  "type": "bool"
+                },
+                "id": 13103,
+                "name": "ElementaryTypeName",
+                "src": "195:4:16"
+              },
+              {
+                "attributes": {
+                  "argumentTypes": null,
+                  "hexvalue": "74727565",
+                  "isConstant": false,
+                  "isLValue": false,
+                  "isPure": true,
+                  "lValueRequested": false,
+                  "subdenomination": null,
+                  "token": "bool",
+                  "type": "bool",
+                  "value": "true"
+                },
+                "id": 13104,
+                "name": "Literal",
+                "src": "232:4:16"
+              }
+            ],
+            "id": 13105,
+            "name": "VariableDeclaration",
+            "src": "195:41:16"
+          },
+          {
+            "attributes": {
+              "body": null,
+              "documentation": "@notice Get the underlying price of a cToken asset\n@param cToken The cToken to get the underlying price of\n@return The underlying asset price mantissa (scaled by 1e18).\n Zero means the price is unavailable.",
+              "implemented": false,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "getUnderlyingPrice",
+              "scope": 13113,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "external"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "cToken",
+                      "scope": 13112,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract CToken",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "CToken",
+                          "referencedDeclaration": 3213,
+                          "type": "contract CToken"
+                        },
+                        "id": 13106,
+                        "name": "UserDefinedTypeName",
+                        "src": "527:6:16"
+                      }
+                    ],
+                    "id": 13107,
+                    "name": "VariableDeclaration",
+                    "src": "527:13:16"
+                  }
+                ],
+                "id": 13108,
+                "name": "ParameterList",
+                "src": "526:15:16"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 13112,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 13109,
+                        "name": "ElementaryTypeName",
+                        "src": "565:4:16"
+                      }
+                    ],
+                    "id": 13110,
+                    "name": "VariableDeclaration",
+                    "src": "565:4:16"
+                  }
+                ],
+                "id": 13111,
+                "name": "ParameterList",
+                "src": "564:6:16"
+              }
+            ],
+            "id": 13112,
+            "name": "FunctionDefinition",
+            "src": "499:72:16"
+          }
+        ],
+        "id": 13113,
+        "name": "ContractDefinition",
+        "src": "89:484:16"
+      }
+    ],
+    "id": 13114,
+    "name": "SourceUnit",
+    "src": "39:535:16"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-15T23:43:55.054Z",
+  "devdoc": {
+    "methods": {
+      "getUnderlyingPrice(address)": {
+        "params": {
+          "cToken": "The cToken to get the underlying price of"
+        },
+        "return": "The underlying asset price mantissa (scaled by 1e18). Zero means the price is unavailable."
+      }
+    }
+  },
+  "userdoc": {
+    "methods": {
+      "getUnderlyingPrice(address)": {
+        "notice": "Get the underlying price of a cToken asset"
+      }
+    }
+  }
+}
